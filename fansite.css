@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+/*Style pour toute les pages sauf Index*/
+/*------------------------------------*/
+
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(image/background.png);
+    /*Image qui pourrait changé par rapport aux sorties du moment*/
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px 50px 50px 50px; 
+    filter: drop-shadow(0 -6mm 4mm rgb(54, 215, 255));
+}
+
+.nb-page{
+    margin-top: 5px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+
+}
+
+.page-article {
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+main .description {
+    background-color: black;
+}
+
+.resume-article img{
+    height: 180px;
+    width:min-content;
+}
+
+.resume-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.connexion {
+    position: relative;
+    background: black;
+    width:  1000px;
+    height : 220px;
+    line-height: 70px;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(image/background_nav.jpg);
+}
+
+
+.logo {
+    margin-top: 40px;
+    margin-bottom: -10px; 
+    height:70px;
+    
+}
+
+.n-navigation {
+    position: relative;
+    font-family: 'Bebas Neue';
+    display: flex;
+    font-size:x-small;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    
+}
+
+.inner {
+    width:100%;
+    margin:auto;
+    margin-top: 5px;
+}
+
+.m-lien {
+    position: sticky;
+    text-decoration: none;
+    color: rgba(53,167,217,255);
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -2%;
+    height: 50px;
+    float:left;
+    padding-bottom:0;
+    
+}
+
+.m-lien a {
+    color:rgba(53,167,217,255);
+}
+
+.m-lien:hover {
+    border-color: rgba(53,167,217,255);
+    
+}
+
+main {
+    
+    width: 1000px;
+    flex:1 0 auto;
+
+}
+
+article{
+    width: 70%;
+    
+}
+article p {
+    float:right
+}
+
+aside img{
+    height: 130px;
+}
+
+footer{
+    width: 101.3%;
+    margin-bottom: -10px;
+    height: fit-content;
+    border-top:2px solid black;
+    background-color: black;
+    color:aliceblue
+}
+
+main{
+    color: aliceblue;
+    font-family: 'Public Sans';
+}
+
+h1,h2,h3 {
+    font-family: 'Bebas Neue';
+}
+
+/*contenu de index.html*/
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-content: space-between;
+}
+
+section img {
+    height: 150px;
+    margin-right: 10px;
+}
+
+.main-gauche{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 60%;
+    align-content: space-between;
+    border: 2px solid black;
+    background-color: black;
+}
+
+.articles img {
+    height: 130px;
+    
+}
+
+.acc_boutique {
+    border: 2px solid black;
+    background-color: black;
+    display: flex;
+    flex-direction:column ;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.description h1 {
+    margin-top: 15px;
+}
+
+/*Code pour les boutons*/
+
+.myButton {
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	/*font-size:15px;*/
+	/*padding:9px 23px;*/
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+    height: 40px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton p {
+    margin-top : -17px;
+    margin-bottom: -17px;
+    font-size: small;
+}
+
+.resume-article .myButton {
+    width: 25%;
+    margin-top: 5px;
+}
+
+.resume-article .myButton p {
+    margin-top : 15px;
+    margin-bottom: 15px;
+    margin-right: 25px;
+    margin-left: -25px;
+}
+
