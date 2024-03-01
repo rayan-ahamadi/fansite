@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
 
-/*Style pour toute les pages sauf Index*/
-/*------------------------------------*/
 
+a {
+    text-decoration: none;
+    color:white
+}
 
 body {
     display: flex;
@@ -253,3 +255,12 @@ section img {
     margin-left: -25px;
 }
 
+.contenu_variable{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.shop{
+    text-align: center;
+}
