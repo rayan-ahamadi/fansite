@@ -3,18 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <title>CBM Blog</title>
-        <link rel="stylesheet" href="fansite.css">
+        <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/0a935ec044.js" crossorigin="anonymous"></script>
-      <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/> -->  
     </head>
 
     <body>
         <header role="navigation"> 
             
             <div class="connexion">
-                    <div class="n-logo mb">
+                    <div class="n-logo">
                         <!-- Logo de CBM Blog (CBM = Comic Book Movies) -->
-                        <a href="index.html"><img src="image/logo.png" alt="logo" class="logo" ></a>
+                        <a href="index.html"><h1 id="logo">CBM Blog</h1></a>
             
                     </div>
 
@@ -59,34 +58,44 @@
                 <h1>Description du site</h1>
                 <section>
                     <img src="image/description_du_site.jpg" alt="super-héros au ciné"/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, dicta. Nam iste a, iure nisi vitae voluptates ad accusamus optio? Error minus natus praesentium amet iste ex temporibus hic neque!</p>
+                    <p>Bienvenue sur notre site CBM Blog ! C'est un blog spécialisé sur les CBM (Comic Book Movies : Film ou séries inspirées de comics). Vous pourrez retrouvez tout les articles de nos blogueurs, les dernières bande-annonce et les différents produits dérivés!</p>
                 </section> 
             </div>
+
             <br>
             <div class="contenu_variable">
                 <div class="articles">
                     <h2>Les nouveaux articles :</h2>
-                    <article class="a">
-                        <a href=""><h3>Rumeur : L'apparition de M.O.D.O.K dans Ant-Man 3</h3></a>
-                        <img src="image/article/article_modok.jpg" alt="Modok dans Ant Man 3">
-                        <p>Le 22/11/2022. Ecrit par : T'Challa</p>
-                        <p>Marvel Studios nous dévoilent un nouveau visuel du potentiel antagoniste de Ant-Man And The Wasp :
-                            Quantumania
-                        </p>
+                    <article>
+                        <a href="">
+                            <h3>Rumeur : L'apparition de M.O.D.O.K dans Ant-Man 3</h3>
+                            <div class="article-auteur">
+                                <img src="image/article/article_modok.jpg" alt="Modok dans Ant Man 3">
+                                <p>Le 22/11/2022. Ecrit par : Kamala Khan</p>
+                            </div>
+                            <p>Marvel Studios nous dévoilent un nouveau visuel du potentiel antagoniste de Ant-Man And The Wasp :
+                                Quantumania</p>
+                        </a>
                     </article>
 
-                    <article class="a">
-                        <a href=""><h3>Reviews : Black-Adam</h3></a>
-                        <img src="image/article/Black_Adam.jpg" alt="Black Adam affiche">
-                        <p>Le 31/10/2022. Ecrit par : Mark Grayson</p>
-                        <p>Review sur le nouveau film du DCEU, Black Adam. Le réveil du DCEU ?  </p>
+                    <article>
+                        <a href=""><h3>Reviews : Black-Adam</h3>
+                            <div class="article-auteur">
+                                <img src="image/article/Black_Adam.jpg" alt="Black Adam affiche">
+                                <p>Le 31/10/2022. Ecrit par : Mark Grayson</p>
+                            </div>
+                            <p>Review sur le nouveau film du DCEU, Black Adam. Le réveil du DCEU ?  </p>
+                        </a>
                     </article>
 
-                    <article class="a">
-                        <a href=""><h3>Nouvelle bande-annonce : Titans Saison 4</h3></a>
-                        <p>Le 25/10/2022. Ecrit par : Tim Drake</p>
-                        <img src="image/article/Titans.jpg" alt="Affiche Titans HBO">
-                        <p>La saison 4 de Titans se dévoilent avec ce nouveau trailer </p>
+                    <article>
+                        <a href=""><h3>Nouvelle bande-annonce : Titans Saison 4</h3>
+                            <div class="article-auteur">
+                                <img src="image/article/Titans.jpg" alt="Affiche Titans HBO">
+                                <p>Le 25/10/2022. Ecrit par : Tim Drake</p>
+                            </div>
+                            <p>La saison 4 de Titans se dévoilent avec ce nouveau trailer </p>
+                        </a>
                     </article>
                 </div>
 
@@ -94,22 +103,27 @@
                     <h2>Nouveaux produits dans la boutique : </h2>
 
                     <aside class="shop">
-                        <a href=""><h3>Figurine pop Miss Marvel</h3></a>
-                        <img src="image/boutique/pop_msmarvel.jpg" alt="figurine miss marvel">
+                        <a href="">
+                            <h3>Figurine pop Miss Marvel</h3>
+                            <img src="image/boutique/pop_msmarvel.jpg" alt="figurine miss marvel">
+                        </a>
                     </aside>
 
                     <aside class="shop">
-                        <a href=""><h3>Gourde Star-Wars</h3></a>
-                        <img src="image/boutique/gourde_star-wars.jpg" alt="gourde star-wars">
+                        <a href="">
+                            <h3>Gourde Star-Wars</h3>
+                            <img src="image/boutique/gourde_star-wars.jpg" alt="gourde star-wars">
+                        </a>
                     </aside>
 
                     <aside class="shop">
-                        <a href=""><h3>Invincible Saison 1 en DVD</h3></a>
-                        <img src="image/boutique/invincible_dvd.jpg" alt="DVD Invincible Saison 1">
+                        <a href="">
+                            <h3>Invincible Saison 1 en DVD</h3>
+                            <img src="image/boutique/invincible_dvd.jpg" alt="DVD Invincible Saison 1">
+                        </a>
                     </aside>
                 </div>
             </div>
-
         </main>
 
         <br>
@@ -125,17 +139,8 @@
                 </div>    
             </div>
 
-            <div class="Contact">
-                <a href=""><p></p></a>
-            </div>
-
-            <div class="Mentions Légales">
-                <a href=""><p></p></a>
-
-            </div>
-
             <div class="droit">
-                <p>© CBM Blog. Tous droits réservés.</p>
+                <p>© CBM Blog. Tout droits réservés.</p>
             </div>
         </footer>
 

@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
 
 
+
+#logo{
+    color: brown;
+    -webkit-text-stroke: 1px white;
+    font-size: xxx-large;
+    margin-bottom: 0px;
+}
+
 a {
     text-decoration: none;
     color:white
@@ -22,7 +30,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 50px 50px 50px 50px; 
     filter: drop-shadow(0 -6mm 4mm rgb(54, 215, 255));
 }
 
@@ -48,7 +55,9 @@ header {
 
 
 main .description {
-    background-color: black;
+    background-color: #161A30;;
+    padding: 10px;
+    border-radius: 9px;
 }
 
 .resume-article img{
@@ -65,7 +74,6 @@ main .description {
     position: relative;
     background: black;
     width:  1000px;
-    height : 220px;
     line-height: 70px;
     flex: 1 0 auto;
     display: flex;
@@ -73,6 +81,7 @@ main .description {
     align-items: center;
     justify-content: flex-start;
     background-image: url(image/background_nav.jpg);
+    border-radius: 9px;
 }
 
 
@@ -89,9 +98,9 @@ main .description {
     display: flex;
     font-size:x-small;
     justify-content: center;
-    background-color: black;
+    background-color: #161A30;;
     width: 100%;
-    
+    border-radius: 0px 0px 9px 9px;
 }
 
 .inner {
@@ -118,6 +127,7 @@ main .description {
 
 .m-lien a {
     color:rgba(53,167,217,255);
+    font-size:larger;
 }
 
 .m-lien:hover {
@@ -133,11 +143,20 @@ main {
 }
 
 article{
-    width: 70%;
-    
+    width: 90%;  
+    cursor: pointer;
 }
-article p {
-    float:right
+
+article:hover {
+    background-color: #212529;
+    border-radius: 9px;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    transition: ease 0.3s;
+}
+
+.article-auteur {
+    display: flex;
+    flex-direction: row;
 }
 
 aside img{
@@ -148,9 +167,12 @@ footer{
     width: 101.3%;
     margin-bottom: -10px;
     height: fit-content;
-    border-top:2px solid black;
-    background-color: black;
-    color:aliceblue
+    background-color: #212529;
+    color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
 main{
@@ -163,6 +185,11 @@ h1,h2,h3 {
 }
 
 /*contenu de index.html*/
+
+.contenu_variable *{
+    padding:10px;
+    border-radius: 9px;
+}
 
 section {
     display: flex;
@@ -188,8 +215,7 @@ section img {
     align-items:center;
     width: 60%;
     align-content: space-between;
-    border: 2px solid black;
-    background-color: black;
+    background-color: #161A30;
 }
 
 .articles img {
@@ -198,8 +224,7 @@ section img {
 }
 
 .acc_boutique {
-    border: 2px solid black;
-    background-color: black;
+    background-color: #161A30;
     display: flex;
     flex-direction:column ;
     justify-content: flex-start;
@@ -207,7 +232,7 @@ section img {
 }
 
 .description h1 {
-    margin-top: 15px;
+    text-align: center;
 }
 
 /*Code pour les boutons*/
@@ -216,17 +241,16 @@ section img {
 	box-shadow:inset 0px -3px 7px 0px #29bbff;
 	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
 	background-color:#2dabf9;
-	border-radius:3px;
+	border-radius:8px;
 	border:1px solid #0b0e07;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	/*font-size:15px;*/
-	/*padding:9px 23px;*/
 	text-decoration:none;
 	text-shadow:0px 1px 0px #263666;
     height: 40px;
+    padding: 5px 8px;
 }
 .myButton:hover {
 	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
@@ -240,7 +264,7 @@ section img {
 .myButton p {
     margin-top : -17px;
     margin-bottom: -17px;
-    font-size: small;
+    font-size:medium;
 }
 
 .resume-article .myButton {
@@ -263,4 +287,16 @@ section img {
 
 .shop{
     text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.shop:hover {
+    background-color: #212529;
+    border-radius: 9px;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    transition: ease 0.3s;
 }
