@@ -35,22 +35,32 @@ header {
 
 .nb-page{
     margin-top: 5px;
-    background-color: black;
+    background-color: #161A30;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: space-between;
+    border-radius: 9px;
 
+}
+
+.back, .next {
+    display: flex;
+    align-items: center;
+    -webkit-text-stroke: 1px #ffffff;
+    color: brown;
+    padding: 0px 5px;
 }
 
 .page-article {
     width: 100%;
     height: fit-content;
-    background-color: black;
+    background-color: #161A30;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    border-radius: 9px;
+    flex-wrap: wrap;
 }
 
 
@@ -72,10 +82,8 @@ main .description {
 
 .connexion {
     position: relative;
-    background: black;
     width:  1000px;
     line-height: 70px;
-    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,8 +270,7 @@ section img {
 }
 
 .myButton p {
-    margin-top : -17px;
-    margin-bottom: -17px;
+    margin: 0;
     font-size:medium;
 }
 
@@ -272,12 +279,6 @@ section img {
     margin-top: 5px;
 }
 
-.resume-article .myButton p {
-    margin-top : 15px;
-    margin-bottom: 15px;
-    margin-right: 25px;
-    margin-left: -25px;
-}
 
 .contenu_variable{
     display: flex;
