@@ -30,7 +30,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    filter: drop-shadow(0 -6mm 4mm rgb(54, 215, 255));
+    filter: drop-shadow(0 -6mm 4mm brown);
 }
 
 .nb-page{
